@@ -14,5 +14,7 @@ The goal of this project is to be able to predict wether or not a client will le
 - Flask to make a web app
 - Render to publish the web app
 
+You can check my jupiter notebook for more details of my work
+
 ### WEB APP
 You can view the web app at https://client-churn-webapp.onrender.com
