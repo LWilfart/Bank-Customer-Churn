@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Importation de la police Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Bank</title>
+</head>
+<body>
+
+        <!-- Bouton en haut à gauche pour accéder à la seconde page -->
+        <div class="top-left-button">
+            <a href="{{ url_for('second_page') }}" class="button">Exploration des données</a>
+        </div>
+    <div class="container">
+    <div class="form-section">
+    <form action="/submit_form" method="POST">
+        <!-- Credit Score -->
+        <label class="label" for="CreditScore">Credit Score:</label>
+        <input class="input" type="number" id="CreditScore" name="CreditScore" required><br><br>
+
+        <!-- Age -->
+        <label class="label" for="Age">Âge (entre 18 et 120 ans):</label>
+        <input class="input" type="number" id="Age" name="Age" min="18" max="120" required><br><br>
+
+        <!-- Tenure -->
+        <label class="label" for="Tenure">Ancienneté (entre 0 et 10 ans):</label>
+        <input class="input" type="number" id="Tenure" name="Tenure" min="0" max="10" required><br><br>
+
+        <!-- Balance -->
+        <label class="label" for="Balance">Solde (Balance):</label>
+        <input class="input" type="number" id="Balance" name="Balance" required><br><br>
+
+        <!-- NumOfProducts -->
+        <label class="label" for="NumOfProducts">Nombre de produits (entre 0 et 4):</label>
+        <input class="input" type="number" id="NumOfProducts" name="NumOfProducts" min="0" max="4" required><br><br>
+
+        <!-- Has Credit Card -->
+        <label for="HasCrCard">Carte de crédit:</label><br>
+        <input type="radio" id="HasCrCardYes" name="HasCrCard" value="1" required>
+        <label for="HasCrCardYes">Oui</label><br>
+        <input type="radio" id="HasCrCardNo" name="HasCrCard" value="0" required>
+        <label for="HasCrCardNo">Non</label><br><br>
+
+        <!-- Is Active Member -->
+        <label for="IsActiveMember">Membre actif:</label><br>
+        <input type="radio" id="IsActiveMemberYes" name="IsActiveMember" value="1" required>
+        <label for="IsActiveMemberYes">Oui</label><br>
+        <input type="radio" id="IsActiveMemberNo" name="IsActiveMember" value="0" required>
+        <label for="IsActiveMemberNo">Non</label><br><br>
+
+        <!-- Gender -->
+        <label for="Gender">Genre:</label><br>
+        <input type="radio" id="GenderMale" name="Gender" value="Male" required>
+        <label for="GenderMale">Homme</label><br>
+        <input type="radio" id="GenderFemale" name="Gender" value="Female" required>
+        <label for="GenderFemale">Femme</label><br><br>
+
+        <!-- Geography -->
+        <label for="Geography">Pays:</label><br>
+        <input type="radio" id="GeographyFrance" name="Geography" value="France" required>
+        <label for="GeographyFrance">France</label><br>
+        <input type="radio" id="GeographyGermany" name="Geography" value="Germany" required>
+        <label for="GeographyGermany">Allemagne</label><br>
+        <input type="radio" id="GeographySpain" name="Geography" value="Spain" required>
+        <label for="GeographySpain">Espagne</label><br><br>
+
+        <!-- Estimated Salary -->
+        <label class="label" for="EstimatedSalary">Salaire annuel estimé:</label>
+        <input class="input" type="number" id="EstimatedSalary" name="EstimatedSalary" min="0" required><br><br>
+
+        <!-- Submit Button -->
+        <input class="button" type="submit" value="Soumettre">
+    </form></div>
+    <div class="image-section">
+        <h1>Votre client restera t'il au sein de la banque ?</h1>
+        <img src="/static/images/Selecting team-bro.png" alt="Image">
+            <!-- Afficher la prédiction si elle existe -->
+            {% if prediction %}
+            <h2>Résultat de la prédiction:</h2>
+            <p>{{ prediction }} (précision :91%)</p>
+{% endif %}
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Integration</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+            <!-- Bouton en haut à gauche pour accéder à la seconde page -->
+            <div class="home-button">
+                <a href="{{ url_for('index') }}" class="button">Prédiction</a>
+            </div>
+    <div class="powerbi-container">
+        <!-- Intégration de Power BI avec un iframe -->
+        <iframe title="exploration" width="1024" height="1060" 
+        src="https://app.powerbi.com/view?r=eyJrIjoiYWM5MTNiMDEtODAzMC00NzIyLWIxZWEtZmUwNWFhNjNmNzdlIiwidCI6IjljNTIzZTY5LTE4NjgtNGYyOC04MjZhLTk5M2RkZjhmMzNhOCIsImMiOjl9" 
+        frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+</body>
+</html>
