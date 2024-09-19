@@ -3,11 +3,11 @@
 </p>
 
 ### What is it about ?
-The goal of this project is to be able to predict wether or not a client will leave the bank based on a kaggle dataset (https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn)
+The goal of this project is to predict whether or not a client will leave the bank based on a Kaggle dataset (https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn).
 
 ### What tools did I use ?
 
-- python for machine learning (pandas, scikit, numpy), data exploration and graphs
+- python for machine learning (Pandas, Scikit-learn, Numpy), data exploration and graphs
 - power bi for rendering visuals and graphs
 - html to make the website
 - css to style the website
