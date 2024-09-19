@@ -1,5 +1,5 @@
-<p align=center>
-Bank Customer-churn
+<p align="center">
+  <img width="500" height="300" src="https://i.imgur.com/0OCmGGG.png">
 </p>
 
 ### What is it about ?
