@@ -1,0 +1,96 @@
+h1 {
+    color: rgb(96, 18, 170);
+    text-align: center;
+}
+
+
+.label {
+
+    margin-bottom: 6px;
+}
+
+.input{
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.form-section {
+    max-width: 30%;
+    background-color: rgb(163, 184, 241);
+    border-radius: 10px;
+    padding:20px;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 130, 213);
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 38%;
+
+}
+
+.container{
+    display: flex; /* Active Flexbox pour placer les divs en ligne */
+    justify-content: space-between; /* Espace entre les sous-divs, vous pouvez ajuster */
+    width: 100%; /* Adapte la largeur de la div parente */
+}
+
+img {
+    width:500px;
+    height:500px;
+    margin-right: 150px;
+    margin-top: 0px;
+
+}
+
+
+h1 {
+    margin-right: 150px;
+    margin-top: 160px;
+    text-align: center;
+
+}
+
+.image-section{
+    text-align: center;
+}
+
+h2 {
+    margin-right:100px;
+}
+
+p {
+    margin-right:100px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/wall.jpg"); /* Chemin mis à jour */
+    background-size: cover; /* Pour que l'image prenne tout l'écran */
+    background-position: center; /* Centrer l'image */
+    height: 100vh;
+    margin: 0;
+}
+
+.powerbi-container {
+    text-align: center; /* Centre l'iframe */
+    margin-top: 80px;
+}
+
+iframe {
+    border: none; /* Supprime les bordures */
+    width: 100%; /* S'adapte à la largeur de la page */
+    max-width: 1024px; /* Largeur maximale de l'iframe */
+    height: 80vh; /* Ajuste la hauteur en fonction de la taille de l'écran */
+}
+
+.top-left-button {
+    margin-right: 1000px;
+}
+
+.home-button {
+    margin-right: 600px;
+}
