@@ -17,4 +17,4 @@ The goal of this project is to predict whether or not a client will leave the ba
 You can check my jupiter notebook for more details of my work
 
 ### WEB APP
-You can view the web app at https://client-churn-webapp.onrender.com
+You can view the web app at https://client-churn-webapp.onrender.com (due to render **it can take 2 min to load the page** but then it is smooth, I used render because it's simple to use and free)
